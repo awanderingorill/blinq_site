@@ -1,0 +1,176 @@
+html, body {
+  height: 100%;
+  margin: 0;
+
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 100;
+  font-size: 16pt;
+  overflow-x: hidden;
+  padding-bottom: 5%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #449AD7;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+h2 {
+    padding-top: 50%;
+    color: #449AD7;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: .7em;
+}
+
+section {
+    height: 100vh;
+    background: #FFFFFF;
+    text-align: center;
+
+}
+
+#cover {
+    background: url(../images/mountains.jpg) no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.container {
+    overflow: visible;
+    background: transparent;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 25%;
+}
+
+.logo {
+    padding: 5%;
+    float: left;
+}
+
+.logo img {
+    width: 175px;
+}
+
+.menu {
+    padding: 5%;
+    float: right;
+}
+
+.menu img {
+    width: 25px;
+}
+
+
+.arrow {
+    position: relative;
+    bottom: -100px;
+}
+
+.container {
+    padding-top: 5%;
+}
+
+
+.copy {
+    max-width: 300px;
+}
+
+.wrapup {
+    display: block;
+    color: #449AD7;
+    font-size: 1.5em;
+}
+
+.button {
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    padding: 15px 40px;
+    border: 1px solid #449AD7;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.dos h2 {
+    padding-top: 0;
+}
+
+.tres {
+    text-align: left;
+}
+
+.cuatro {
+    text-align: right;
+}
+
+.cinco {
+    text-align: left;
+}
+
+.seis {
+    text-align: right;
+}
+
+.siete {
+    text-align: center;
+}
+
+.truly-mobile img {
+    position: relative;
+    left: -250px;
+    width: 150%; !important;
+}
+
+.totally-free img {
+    position: relative;
+    right: -50px;
+    width: 700px !important;
+}
+
+.bunch {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    color: #449AD7;
+    text-align: center;
+    margin: 0 auto;
+    font-size: .8em;
+}
+
+footer a {
+    font-size: .8em;
+    display: inline-block;
+    border-right: 1px solid #449AD7;
+    padding-right: 5px;
+}
+
+footer a:last-child { 
+    border: none;
+}
