@@ -7,7 +7,9 @@ gulp.task('clean-styles', function () {
 
 gulp.task('sass', ['clean-styles'], function () {
   gulp.src('./styles/*.scss')
-      .pipe(_.sass())
+      .pipe(_.sass({
+        outputStyle: 'compressed'
+      }))
       .pipe(gulp.dest('./assets/'));
 });
 
