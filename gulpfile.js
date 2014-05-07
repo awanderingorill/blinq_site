@@ -5,6 +5,10 @@ gulp.task('clean-styles', function () {
   return gulp.src(['assets/*.css'], { read: false }).pipe(_.clean());
 });
 
+gulp.task('bower-files', function(){
+    _.bowerFiles().pipe(gulp.dest('./vendor'));
+});
+
 gulp.task('sass', ['clean-styles'], function () {
   gulp.src('./styles/*.scss')
       .pipe(_.sass({
