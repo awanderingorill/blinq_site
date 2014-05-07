@@ -1,176 +1,193 @@
 html, body {
-  height: 100%;
-  margin: 0;
-
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
-  font-size: 16pt;
-  overflow-x: hidden;
-  padding-bottom: 5%;
-}
-
-img {
-   max-width: 100%;
-   height: auto;
-}
-
-p {
-    padding: 0;
-    margin: 0;
+  font-size: 16px;
 }
 
 a {
-    color: #449AD7;
-    text-decoration: none;
-    font-size: 0.7em;
+  color: #449AD7;
+  text-decoration: none;
+  /*font-size: 0.7em;*/
 }
 
-h1 {
-    margin: 0;
-    color: #FFFFFF;
-    font-size: 3em;
-    font-weight: 100;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #53abdf;
+  text-align: center;
 }
 
-h2 {
-    padding-top: 50%;
-    color: #449AD7;
-    font-size: 1.2em;
-    font-weight: 700;
+.cf::after, .cf::before {
+  content: ' ';
+  display: table;
 }
-
-h3 {
-    font-weight: 100;
-    font-size: .7em;
-}
-
-section {
-    height: 100vh;
-    background: #FFFFFF;
-    text-align: center;
-
+.cf::after {
+  clear: both;
 }
 
 #cover {
-    background: url(../images/mountains.jpg) no-repeat center center;
-    background-size: cover;
-    color: #FFFFFF;
+  background: url(../images/mountains.jpg) no-repeat center center;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 400px;
+  position: relative;
 }
 
-.container {
-    overflow: visible;
-    background: transparent;
+#cover h1 {
+  color: #fff;
+  margin: 0;
+  font-weight: 100;
 }
 
 .intro {
-    text-align: center;
-    padding-top: 25%;
+  width: 100%;
 }
 
 .logo {
-    padding: 5%;
-    float: left;
+  padding: 5%;
+  position: absolute;
+  left: 0;
 }
 
 .logo img {
-    width: 175px;
+  width: 175px;
 }
 
 .menu {
-    padding: 5%;
-    float: right;
+  padding: 5%;
+  position: absolute;
+  right: 0;
 }
 
 .menu img {
-    width: 25px;
+  width: 25px;
 }
-
 
 .arrow {
-    position: relative;
-    bottom: -100px;
+  position: absolute;
+  bottom: 35px;
+  text-align: center;
+  width: 100%;
 }
 
-.container {
-    padding-top: 5%;
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-
-.copy {
-    max-width: 300px;
+.section {
+  text-align: center;
+  margin-bottom: 4em;
 }
 
-.wrapup {
-    display: block;
-    color: #449AD7;
-    font-size: 1.5em;
+.text {
+  color: #6b6b6b;
+  padding: 0 2em;
+}
+
+.promo.mobile {
+  padding: 0 5em;
+  max-width: 300px;
+  margin: 4em auto 0;
+}
+
+.section p {
+  width: 75%;
+  margin: 1em auto;
+}
+
+.desktop {
+  display: none;
+}
+
+.responsive-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.thin {
+  font-weight: 100;
+  margin: 0;
 }
 
 .button {
-    margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #53abdf;
+  background: #fff;
+  color: #53abdf;
+  font-size: 1.25em;
+  font-weight: 800;
+  padding: .75em 2.5em;
+}
+
+.spaced {
+  margin: 4em 40px;
+}
+
+@media (min-width: 800px) {
+  .desktop {
     display: block;
-    font-weight: 700;
-    padding: 15px 40px;
-    border: 1px solid #449AD7;
-    border-radius: 4px;
-    width: 100px;
-}
+  }
 
-.dos h2 {
-    padding-top: 0;
-}
+  .mobile {
+    display: none;
+  }
 
-.tres {
+  .text {
+    max-width: 350px;
+    font-size: 1.25em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .thin {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.65em;
+  }
+
+  .promo {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo:not(.desktop) {
+    max-width: 200px;
+  }
+
+  .spaced {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+
+  section:nth-of-type(3) div {
+    float: right;
+    width: 45%;
+  }
+
+  section:nth-of-type(3) div,
+  section:nth-of-type(3) h2,
+  section:nth-of-type(3) .text {
     text-align: left;
-}
+  }
 
-.cuatro {
-    text-align: right;
-}
+  section:nth-of-type(3) .text {
+    padding: 0;
+    margin: 0;
+  }
 
-.cinco {
-    text-align: left;
-}
-
-.seis {
-    text-align: right;
-}
-
-.siete {
-    text-align: center;
-}
-
-.truly-mobile img {
+  section:nth-of-type(3) figure {
+    float: left;
     position: relative;
-    left: -250px;
-    width: 150%; !important;
-}
-
-.totally-free img {
-    position: relative;
-    right: -50px;
-    width: 700px !important;
-}
-
-.bunch {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-footer {
-    color: #449AD7;
-    text-align: center;
-    margin: 0 auto;
-    font-size: .8em;
-}
-
-footer a {
-    font-size: .8em;
-    display: inline-block;
-    border-right: 1px solid #449AD7;
-    padding-right: 5px;
-}
-
-footer a:last-child { 
-    border: none;
+    left: -80px;
+  }
 }
