@@ -11,10 +11,9 @@ gulp.task('bower-files', function(){
 
 gulp.task('sass', ['clean-styles'], function () {
   gulp.src('./styles/*.scss')
-      .pipe(_.sass({
-        // outputStyle: 'compressed'
-      }))
-      .pipe(_.autoprefixer({ cascade: true }))
+      .pipe(_.sass())
+      .pipe(_.autoprefixer())
+      .pipe(_.csscomb())
       .pipe(gulp.dest('./assets/'));
 });
 
