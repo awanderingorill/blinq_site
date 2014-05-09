@@ -12,7 +12,7 @@ gulp.task('bower-files', function(){
 gulp.task('sass', ['clean-styles'], function () {
   gulp.src('./styles/*.scss')
       .pipe(_.sass({
-        outputStyle: 'compressed'
+        // outputStyle: 'compressed'
       }))
       .pipe(gulp.dest('./assets/'));
 });
