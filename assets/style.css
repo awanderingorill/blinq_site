@@ -1,9 +1,13 @@
 .grid {
   display: block;
   font-size: 0;
-  margin: 0 0 0 -24px;
+  margin: 0 0 0 -1.25;
+  max-width: 1292px;
   padding: 0;
   text-align: left; }
+  .grid:not(.nested) {
+    margin-left: auto;
+    margin-right: auto; }
   .grid > .grid {
     margin: 0; }
 
@@ -16,7 +20,7 @@
 .grid-col {
   display: inline-block;
   font-size: 16px;
-  padding-left: 24px;
+  padding-left: 1.25;
   vertical-align: top;
   width: 100%; }
 
@@ -91,112 +95,117 @@
 
 
 
-* {
-  box-sizing: border-box; }
-
-html, body {
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 100;
-  font-size: 16px; }
-
-a {
-  color: #449AD7;
-  text-decoration: none;
-  /*font-size: 0.7em;*/ }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  color: #53abdf;
-  text-align: center; }
-
-.cf::after, .cf::before {
+.cf::before, .cf::after {
   content: ' ';
   display: table; }
-
 .cf::after {
   clear: both; }
 
-.grid {
-  max-width: 1292px; }
-
-#cover {
-  background: url(../images/mountains.jpg) no-repeat center center;
-  background-size: cover;
-  color: #FFFFFF;
-  height: 400px;
-  position: relative; }
-
-header {
-  position: relative; }
-
-#cover h1 {
-  color: #fff;
-  margin: 0;
-  font-weight: 100; }
-
-.intro {
-  width: 100%; }
-
-.logo {
-  padding: 5%;
-  position: absolute;
-  left: 0; }
-
-.logo img {
-  width: 175px; }
-
-.menu {
-  padding: 5%;
-  position: absolute;
-  right: 0; }
-
-.menu img {
-  width: 25px; }
-
-.grid:not(.nested) {
-  margin-left: auto;
-  margin-right: auto; }
-
-.arrow {
-  position: absolute;
-  bottom: 35px;
-  text-align: center; }
 
 .vertical-center {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.section {
-  text-align: center;
-  margin-bottom: 4em; }
 
 .desktop {
   display: none; }
+  @media (min-width: 800px) {
+    .desktop {
+      display: block; } }
+
+.mobile {
+  display: block; }
+  @media (min-width: 800px) {
+    .mobile {
+      display: none; } }
 
 .responsive-img {
   height: auto;
   max-width: 100%; }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.25; }
+
+a {
+  color: #449ad7;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #53abdf;
+  font-weight: 600;
+  text-align: center; }
+
+header {
+  position: relative; }
+
 .thin {
   font-weight: 100;
   margin: 0; }
 
+.text {
+  color: #6b6b6b;
+  padding: 0 2em; }
+
 .button {
+  background: #fff;
   border-radius: 5px;
   border: 1px solid #53abdf;
-  background: #fff;
   color: #53abdf;
   font-size: 1.25em;
   font-weight: 800;
   padding: 0.75em 2.5em; }
 
-@media (min-width: 800px) {
-  .desktop {
-    display: block; }
-  .mobile {
-    display: none; } }
+#cover {
+  background-image: url(../images/mountains.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #FFFFFF;
+  height: 400px;
+  position: relative; }
+  #cover h1 {
+    color: #fff;
+    margin: 0;
+    font-weight: 100; }
+  #cover .intro {
+    width: 100%; }
+  #cover .logo {
+    padding: 5%;
+    position: absolute;
+    left: 0; }
+    #cover .logo img {
+      width: 175px; }
+  #cover .menu {
+    padding: 5%;
+    position: absolute;
+    right: 0; }
+    #cover .menu img {
+      width: 25px; }
+  #cover .arrow {
+    position: absolute;
+    bottom: 35px;
+    text-align: center; }
+
+.section {
+  text-align: center;
+  margin-bottom: 4em; }
+  .section p {
+    margin: 1em auto;
+    width: 75%; }
+
+.promo.mobile {
+  margin: 4em auto 0;
+  max-width: 300px;
+  padding: 0 4em; }

@@ -2,8 +2,14 @@
   display: block;
   font-size: 0;
   margin: 0 0 0 (-$col-gutter);
+  max-width: $container;
   padding: 0;
   text-align: left;
+
+  &:not(.nested) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   > .grid {
     margin: 0;

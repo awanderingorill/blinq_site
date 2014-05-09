@@ -1,0 +1,9 @@
+.section {
+  text-align: center;
+  margin-bottom: $default-spacing;
+
+  p {
+    margin: $default-spacing/4 auto;
+    width: 75%;
+  }
+}

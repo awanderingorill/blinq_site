@@ -1,0 +1,45 @@
+%cf {
+  &::before, &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.cf {
+  @extend %cf;
+}
+
+%vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-center {
+  @extend %vertical-center;
+}
+
+.desktop {
+  display: none;
+
+  @media (min-width: $breakpoint) {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.responsive-img {
+  height: auto;
+  max-width: 100%;
+}

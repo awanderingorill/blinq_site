@@ -1,0 +1,47 @@
+#cover {
+  background: {
+    image: url(../images/mountains.jpg);
+    repeat: no-repeat;
+    size: cover;
+    position: center center;
+  }
+  color: #FFFFFF;
+  height: 400px;
+  position: relative;
+
+  h1 {
+    color: #fff;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .logo {
+    padding: 5%;
+    position: absolute;
+    left: 0;
+
+    img {
+      width: 175px;
+    }
+  }
+
+  .menu {
+    padding: 5%;
+    position: absolute;
+    right: 0;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+  }
+}
