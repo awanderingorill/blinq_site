@@ -10,3 +10,7 @@
 @import "features/cover";
 @import "features/section";
 @import "features/promo";
+
+@if $debug {
+  @import "pesticide";
+}

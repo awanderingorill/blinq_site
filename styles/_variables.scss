@@ -6,10 +6,9 @@ $base-spacing-unit: $base-line-height;
 $breakpoint: 800px;
 $col-gutter: $base-spacing-unit;
 $container: 1292px;
+$debug: false;
+$default-spacing: 4em;
+$main-color: #53abdf;
 $num-cols: 12;
 $responsive: true;
 $sizes: ("", "L");
-$default-spacing: 4em;
-
-
-$main-color: #53abdf;
