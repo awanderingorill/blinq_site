@@ -14,6 +14,7 @@ gulp.task('sass', ['clean-styles'], function () {
       .pipe(_.sass({
         // outputStyle: 'compressed'
       }))
+      .pipe(_.autoprefixer({ cascade: true }))
       .pipe(gulp.dest('./assets/'));
 });
 
