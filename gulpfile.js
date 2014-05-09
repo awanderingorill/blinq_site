@@ -20,7 +20,7 @@ gulp.task('sass', ['clean-styles'], function () {
 
 // Watch Files
 gulp.task('watch', function() {
-  gulp.watch('styles/*.scss', ['sass']);
+  gulp.watch('styles/**/*.scss', ['sass']);
 });
 
 // Default
