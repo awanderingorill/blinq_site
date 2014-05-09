@@ -20,3 +20,29 @@
     }
   }
 }
+
+@mixin section--left {
+  div {
+    float: right;
+    width: 50%;
+  }
+
+  figure {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@mixin section--right {
+  div {
+    float: left;
+    width: 50%;
+  }
+
+  figure {
+    float: right;
+    width: 50%;
+    margin-top: 0;
+  }
+}

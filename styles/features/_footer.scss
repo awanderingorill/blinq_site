@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+
+  li {
+    display: inline;
+    margin-right: 1em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

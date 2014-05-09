@@ -95,10 +95,10 @@
 
 
 
-.cf::before, .cf::after {
+.cf::before, .section::before, .cf::after, .section::after {
   content: ' ';
   display: table; }
-.cf::after {
+.cf::after, .section::after {
   clear: both; }
 
 
@@ -132,6 +132,7 @@
   box-sizing: border-box; }
 
 html, body {
+  background-color: #f6f6f6;
   font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 16px;
   font-weight: 100;
@@ -145,6 +146,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #53abdf;
   font-weight: 600;
   text-align: center; }
+
+.main {
+  background-color: #fff; }
 
 header {
   position: relative; }
@@ -204,8 +208,34 @@ header {
   .section p {
     margin: 1em auto;
     width: 75%; }
+  @media (min-width: 800px) {
+    .section:nth-of-type(3) div, .section:nth-of-type(5) div {
+      float: right;
+      width: 50%; }
+    .section:nth-of-type(3) figure, .section:nth-of-type(5) figure {
+      float: left;
+      width: 50%;
+      margin-top: 0; }
+    .section:nth-of-type(4) div, .section:nth-of-type(6) div {
+      float: left;
+      width: 50%; }
+    .section:nth-of-type(4) figure, .section:nth-of-type(6) figure {
+      float: right;
+      width: 50%;
+      margin-top: 0; } }
 
-.promo.mobile {
+.promo {
   margin: 4em auto 0;
   max-width: 300px;
   padding: 0 4em; }
+  @media (min-width: 800px) {
+    .promo {
+      max-width: 600px; } }
+
+footer {
+  text-align: center; }
+  footer li {
+    display: inline;
+    margin-right: 1em; }
+    footer li:last-of-type {
+      margin-right: 0; }

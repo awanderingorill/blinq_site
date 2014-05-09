@@ -1,5 +1,9 @@
-.promo.mobile {
+.promo {
   margin: $default-spacing auto 0;
   max-width: 300px;
   padding: 0 $default-spacing;
+
+  @media (min-width: $breakpoint) {
+    max-width: 600px;
+  }
 }
